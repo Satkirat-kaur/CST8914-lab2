@@ -5,7 +5,7 @@
   <title>Question 3- CSS & HTML</title>
   <style>
     .button {
-      background-color: #4CAF50;
+      background-color: #3e8d40;
       border: none;
       color: white;
       padding: 15px 32px;
@@ -16,14 +16,20 @@
       margin: 4px 2px;
       cursor: pointer;
     }
+    .button:hover{ 
+      background-color: #2c682e; /* Add hover effect for better UX */
+    }
 
     body {
       padding: 20px;
       background-color: #2f2f2f;
     }
 
-    h1, h2, p {
-      color: black;
+     h1, p {
+      color: white; /* Use white for better contrast */
+      font-size: 18px;
+      line-height: 1.6;
+
     }
   </style>
 </head>
@@ -34,7 +40,7 @@
 
   <p>What causes errors in HTML?</p>
 
-  <div class="button">Submit answers</div>
+  <button class="button" type="button">Submit Your Answers Here </button>
 
 </body>
 
