@@ -43,11 +43,19 @@
 </body>
 
 <script>
+    const button = document.getElementById("hoverButton"); //This variable stores id value "hoverButton"
+    const demo = document.getElementById("demo"); //This variable stores id value "demo"
+   
     // Attach event listener using JavaScript
     document.getElementById("hoverButton").addEventListener("mouseover", function () {
         document.getElementById("demo").innerHTML = "Hello World";
     });
-</script>
 
+    // Attach focus event listener for keyboard navigation
+    button.addEventListener("focus", function () {
+        document.getElementById("demo").innerHTML = "Hello World";
+        });
+
+</script>
 
 </html>
